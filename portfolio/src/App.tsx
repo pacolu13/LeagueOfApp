@@ -1,37 +1,34 @@
 import './App.css'
 import { ContainerCards } from './Components'
 import { useFetch } from './hooks'
+import { Data } from './interfaces/champion';
 
-const url = 'https://rickandmortyapi.com/api/character/?page=1'
+const url = 'https://ddragon.leagueoflegends.com/cdn/15.2.1/data/es_AR/champion.json'
 
-interface Data {
-  results: Post[]
-}
-
-interface Post {
-  id: number
-  name: string
-  status: string
-}
 
 function App() {
-  const { data, error, isLoading } = useFetch<Data>(url)
+  const { data, error, isLoading } = useFetch<Data>(url);
+  
+  console.log(data);
+
   return (
     <>
       {isLoading && <p>Loading...</p>}
       {error && <p>{error}</p>}
 
       <ContainerCards>
-        {data && data.results.map((post) => (
-          <div key={post.id}>
-            <h2>{post.name}</h2>
-            <p>{post.status}</p>
-          </div>
-        ))}
+        {data &&
+          Object.values(data.data).map((champ) => (
+            <div key={champ.id}>
+              <h1>{champ.id}</h1>
+              <p>{champ.blurb}</p>
+              <p>{champ.key}</p>
+            </div>
+          ))
+        }
       </ContainerCards>
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
