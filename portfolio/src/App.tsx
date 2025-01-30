@@ -1,15 +1,12 @@
 import './App.css'
-import { ContainerCards } from './Components'
+import { Card, ContainerCards } from './Components'
 import { useFetch } from './hooks'
-import { Data } from './interfaces/champion';
+import { Data } from './interfaces';
 
 const url = 'https://ddragon.leagueoflegends.com/cdn/15.2.1/data/es_AR/champion.json'
 
-
 function App() {
   const { data, error, isLoading } = useFetch<Data>(url);
-  
-  console.log(data);
 
   return (
     <>
@@ -19,11 +16,7 @@ function App() {
       <ContainerCards>
         {data &&
           Object.values(data.data).map((champ) => (
-            <div key={champ.id}>
-              <h1>{champ.id}</h1>
-              <p>{champ.blurb}</p>
-              <p>{champ.key}</p>
-            </div>
+            <Card key={champ.key} id={champ.id} blurb={champ.blurb} />
           ))
         }
       </ContainerCards>

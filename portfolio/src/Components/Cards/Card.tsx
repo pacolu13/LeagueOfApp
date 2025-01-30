@@ -1,19 +1,12 @@
-import { BarLevel } from ".."
+import { Champion } from "../../interfaces/champion"
+import { ImageCard } from "./ImageCard"
 
-interface Props {
-    title: string,
-    description: string,
-    level: number
-    imgLenguage: string
-}
-
-export const Card = ({ title, description, level, imgLenguage }: Props) => {
+export const Card = ({ id, blurb}: Champion) => {
     return (
         <div className="card">
-            <h3>{title}</h3>
-            <BarLevel level={level} />
-            <div>{description}</div>
-            <img src={imgLenguage} alt={title} />
+            <h3>{id}</h3>
+            <div>{blurb}</div>
+            <ImageCard name={id}/>
         </div>
     )
 }
