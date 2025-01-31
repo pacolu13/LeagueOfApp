@@ -1,12 +1,12 @@
+import { API_ROUTES } from './api';
 import './App.css'
 import { Card, ContainerCards } from './Components'
 import { useFetch } from './hooks'
 import { Data } from './interfaces';
 
-const url = 'https://ddragon.leagueoflegends.com/cdn/15.2.1/data/es_AR/champion.json'
 
 function App() {
-  const { data, error, isLoading } = useFetch<Data>(url);
+  const { data, error, isLoading } = useFetch<Data>(API_ROUTES.champions);
 
   return (
     <>

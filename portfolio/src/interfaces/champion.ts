@@ -9,5 +9,4 @@ export interface Champion {
     title?: string;
     tags?: string[];
     partype?: string;
-    info?: {attack: number, defense: number, magic: number, difficulty: number};
 }
