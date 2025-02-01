@@ -4,8 +4,8 @@ export interface Data {
 
 export interface Champion {
     id: string;
-    blurb: string;
     key: string;
+    blurb?: string;
     title?: string;
     tags?: string[];
     partype?: string;
