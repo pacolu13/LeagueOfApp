@@ -9,7 +9,7 @@ interface Props {
 
 export const Header = ({ title, links }: Props) => {
     return (
-        <header>
+        <header className='header'>
             <h1>{title}</h1>
             <nav>
                 <ul>
