@@ -1,5 +1,4 @@
 import { API_ROUTES } from './api';
-import './App.css'
 import { Card, ContainerCards } from './Components'
 import { useFetch } from './hooks'
 import { Data } from './interfaces';
