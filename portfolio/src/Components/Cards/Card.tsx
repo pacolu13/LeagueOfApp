@@ -8,7 +8,7 @@ export const Card = ({ id }: Champion) => {
         <div className="card">
             <h3>{id}</h3>
             <ImageCard name={id} />
-            <Link to={`/Champ/${id}`}>Champ</Link>
+            <Link className="link" to={`/Champ/${id}`}>Champ</Link>
         </div>
     )
 }

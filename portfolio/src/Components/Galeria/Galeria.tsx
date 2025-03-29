@@ -1,5 +1,6 @@
 import { API_ROUTES } from "../../api"
 import { Skin } from "../../interfaces"
+import './Galeria.css'
 
 interface Props{
     skins: Skin[],
@@ -9,7 +10,7 @@ interface Props{
 export const Galeria = ({skins, name}: Props) => {
 
     return (
-        <div>
+        <div className="galeria">
             {skins.map((skin, index) => (
                 <div key={index}>
                     <img src={`${API_ROUTES.splashArt}${name}_${skin.num}.jpg`} alt={skin.name}/>

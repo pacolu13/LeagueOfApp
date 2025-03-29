@@ -1,3 +1,5 @@
+import './Button.css';
+
 interface Props{
     label: string,
     parentMethod: () => void
@@ -5,6 +7,6 @@ interface Props{
 
 export const Button = ({label, parentMethod}: Props) => {
     return (
-        <button onClick={parentMethod}>{label}</button>
+        <button className="button" onClick={parentMethod}>{label}</button>
     )
 }
