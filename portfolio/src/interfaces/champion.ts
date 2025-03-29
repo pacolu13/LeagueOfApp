@@ -26,7 +26,7 @@ export interface ChampionDetails {
     spells?: Spell[];
 }
 
-interface Skin {
+export interface Skin {
     id: string;
     num: number;
     name: string;
