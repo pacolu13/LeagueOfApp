@@ -31,6 +31,7 @@ export interface Skin {
     num: number;
     name: string;
     chromas: boolean;
+    image: string;
 }
 
 interface Spell {

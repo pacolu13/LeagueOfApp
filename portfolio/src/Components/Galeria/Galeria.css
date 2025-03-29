@@ -1,5 +1,36 @@
-.galeria{
-    display: grid;
+.galeria {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+}
+
+.galeria__container {
+    width: 300px;
+    /* Ajusta según tamaño de las imágenes */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria__imagen {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.galeria__btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.galeria__btn:hover {
+    background-color: #555;
 }
