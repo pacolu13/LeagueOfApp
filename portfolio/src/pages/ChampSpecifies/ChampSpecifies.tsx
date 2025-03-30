@@ -3,6 +3,8 @@ import { useFetch } from "../../hooks";
 import { API_ROUTES } from "../../api";
 import { Champion, DataChampion, Skin } from "../../interfaces";
 import { Galeria } from "../../Components/Galeria/Galeria";
+import { ChampionDetails } from "../../Components";
+import "./ChampSpecifies.css"
 
 
 export const ChampSpecifies = () => {
@@ -18,16 +20,14 @@ export const ChampSpecifies = () => {
         num: skin.num,
         name: skin.name,
         chromas: skin.chromas,
-        image: `${API_ROUTES.splashArt}${champion.id}_${skin.num}.jpg`
+        image: `${API_ROUTES.CHAMP_SPLASHART_URL}${champion.id}_${skin.num}.jpg`
     }));
-    
-    
+
     return (
-        <div style={{ textAlign: 'center' }}>
-            <h1>ChampSpecifies</h1>
-            <h2>{champion.id}</h2>
-            <Link to={'/Inicio'}>Inicio</Link>
+        <div className="champion-specifies">
+            <ChampionDetails campeon={champion} />
             <Galeria skins={images} />
+            <Link to={'/Inicio'}>Inicio</Link>
         </div>
     )
 }
