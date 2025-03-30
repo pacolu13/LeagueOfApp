@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom"
 import { useFetch } from "../../hooks";
 import { API_ROUTES } from "../../api";
-import { DataChampion, Skin } from "../../interfaces";
+import { Champion, DataChampion, Skin } from "../../interfaces";
 import { Galeria } from "../../Components/Galeria/Galeria";
 
 
@@ -11,21 +11,21 @@ export const ChampSpecifies = () => {
 
     if (champName === undefined || data === null) return null;
 
-    const skins: Skin[] = Array.isArray(data.data[champName].skins) ? data.data[champName].skins : [];
-
+    const champion: Champion = data.data[champName];
+    const skins: Skin[] = Array.isArray(champion.skins) ? champion.skins : [];
     const images: Skin[] = skins.map(skin => ({
         id: skin.id,
         num: skin.num,
         name: skin.name,
         chromas: skin.chromas,
-        image: `${API_ROUTES.splashArt}${data.data[champName].id}_${skin.num}.jpg`
+        image: `${API_ROUTES.splashArt}${champion.id}_${skin.num}.jpg`
     }));
     
     
     return (
         <div style={{ textAlign: 'center' }}>
             <h1>ChampSpecifies</h1>
-            <h2>{data.data[champName].id}</h2>
+            <h2>{champion.id}</h2>
             <Link to={'/Inicio'}>Inicio</Link>
             <Galeria skins={images} />
         </div>

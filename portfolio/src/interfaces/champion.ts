@@ -3,7 +3,7 @@ export interface Data {
 }
 
 export interface DataChampion {
-    data: Record<string, ChampionDetails>;
+    data: Record<string, Champion>;
 }
 
 export interface Champion {
@@ -11,19 +11,36 @@ export interface Champion {
     key: string;
     blurb?: string;
     title?: string;
+    skins?: Skin[];
+    lore?: string;
+    allytips?: string[];
+    enemytips?: string[];
     tags?: string[];
+    stats?: Stats;
+    spells?: Spell[];
     partype?: string;
 }
 
-export interface ChampionDetails {
-    id: string;
-    key: string;
-    blurb?: string;
-    title?: string;
-    tags?: string[];
-    partype?: string;
-    skins?: Skin[];
-    spells?: Spell[];
+export interface Stats {
+    hp: number;
+    hpperlevel: number;
+    mp: number;
+    mpperlevel: number;
+    movespeed: number;
+    armor: number;
+    armorperlevel: number;
+    spellblock: number;
+    spellblockperlevel: number;
+    attackrange: number;
+    hpregen: number;
+    hpregenperlevel: number;
+    mpregen: number;
+    mpregenperlevel: number;
+    crit: number;
+    critperlevel: number;
+    attackdamage: number;
+    attackdamageperlevel: number;
+    atackspeed: number;
 }
 
 export interface Skin {

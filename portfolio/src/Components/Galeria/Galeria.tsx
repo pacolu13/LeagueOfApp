@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Skin } from "../../interfaces";
 import "./Galeria.css";
+import { Button } from "../Button/Button";
 
 interface Props {
   skins: Skin[];
@@ -10,17 +11,17 @@ export const Galeria = ({ skins }: Props) => {
   const cantSkins = skins.length;
   const [indice, setIndice] = useState<number>(0);
 
-  const siguiente = () => {
+  function siguiente() {
     setIndice((prev) => (prev < cantSkins - 1 ? prev + 1 : 0));
   };
 
-  const anterior = () => {
+  function anterior() {
     setIndice((prev) => (prev > 0 ? prev - 1 : cantSkins - 1));
   };
 
   return (
     <div className="galeria">
-      <button onClick={anterior} className="galeria__btn">{"<"}</button>
+      <Button parentMethod={anterior} label="<" />
 
       <div className="galeria__container">
         <img
@@ -31,7 +32,7 @@ export const Galeria = ({ skins }: Props) => {
         <p>{skins[indice].name}</p>
       </div>
 
-      <button onClick={siguiente} className="galeria__btn">{">"}</button>
+      <Button parentMethod={siguiente} label=">" />
     </div>
   );
 };
