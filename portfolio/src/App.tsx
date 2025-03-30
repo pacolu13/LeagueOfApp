@@ -13,7 +13,7 @@ function App() {
       <ContainerCards>
         {data &&
           Object.values(data.data).map((champ) => (
-            <Card key={champ.key} id={champ.id} />
+            <Card Champ={champ} />
           ))
         }
       </ContainerCards>

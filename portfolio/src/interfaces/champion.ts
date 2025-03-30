@@ -17,12 +17,19 @@ export interface Champion {
     allytips?: string[];
     enemytips?: string[];
     tags?: string[];
+    partype?: string;
+    info?: Info;
     stats?: Stats;
     spells?: Spell[];
     passive?: Spell;
-    partype?: string;
 }
 
+export interface Info {
+    attack?: number;
+    defense?: number;
+    magic?: number;
+    difficulty?: number;
+}
 export interface Stats {
     hp?: number;
     hpperlevel?: number;
@@ -56,7 +63,13 @@ export interface Skin {
 interface Spell {
     id: string;
     name: string;
+    label: string[];
     description: string;
+    tooltip?: string;
+    cooldown?: number[];
+    cooldownBurn?: string;
+    cost?: number[];
+    costBurn?: string;
     image: {
         full: string;
     }
