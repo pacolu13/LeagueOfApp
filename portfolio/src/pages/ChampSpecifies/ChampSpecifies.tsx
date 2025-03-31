@@ -25,9 +25,9 @@ export const ChampSpecifies = () => {
 
     return (
         <div className="champion-specifies">
+            <Link to={'/Inicio'}>Inicio</Link>
             <ChampionDetails campeon={champion} />
             <Galeria skins={images} />
-            <Link to={'/Inicio'}>Inicio</Link>
         </div>
     )
 }

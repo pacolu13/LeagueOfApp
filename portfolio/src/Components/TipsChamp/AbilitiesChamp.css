@@ -1,0 +1,61 @@
+.abilities-champ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.abilities-champ h4 {
+    font-size: 20px;
+    color: white;
+    margin: 1.5%;
+}
+
+.abilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.abilities-list li {
+    max-width: 95%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #fff;
+    margin: 0.5%;
+    padding: 1.0%;
+    background-color: #2b2b2b;
+    border-radius: 5px;
+}
+
+.abilities-list li:hover {
+    background-color: #3b3b3b;
+    cursor: pointer;
+}
+
+.abilities-list img {
+    min-width: none;
+    max-width: 65px;
+    border-radius: 50%;
+    margin: 0.5%;
+}
+
+.abilities-list p {
+    max-width: 80%;
+    font-size: 16px;
+    color: #fff;
+    margin: 0.5%;
+    padding: 1.0%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ability-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1.5%;
+    padding: 0.5%;
+}

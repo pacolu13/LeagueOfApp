@@ -1,0 +1,31 @@
+.tips-champ{
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+.tips-champ ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-item{
+    
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tip-item img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.tip-item li{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}

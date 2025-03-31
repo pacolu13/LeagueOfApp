@@ -1,7 +1,7 @@
 .galeria_container {
     display: flex;
-    max-width: 550px;
-    min-width: 550px;
+    max-width: 70%;
+    min-width: 70%;
     align-items: center;
     justify-content: center;
 }
@@ -18,5 +18,5 @@
     font-size: 1.0rem;
     text-align: center;
     margin: 0 10px;
-    background-color: white;
+    background-color: none;
 }

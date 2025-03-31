@@ -1,9 +1,11 @@
 import { ChampSpecifies } from "./pages/ChampSpecifies/ChampSpecifies";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
+import { Footer, Header } from "./Components";
 
 export const AppRouter = () => {
-    return (
+    return <>
+        <Header title={""} links={[]} />
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />} />
@@ -11,5 +13,6 @@ export const AppRouter = () => {
                 <Route path="/Champ/:champName" element={<ChampSpecifies />} />
             </Routes>
         </BrowserRouter>
-    );
+        <Footer text={""} links={[]} />
+    </>
 }

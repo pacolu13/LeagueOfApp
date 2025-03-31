@@ -1,0 +1,32 @@
+.champion-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    min-width: 100px;
+}
+
+.info-bar {
+    display: flex;
+    gap: 2px;
+}
+
+.info-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+}

@@ -20,8 +20,8 @@ export interface Champion {
     partype?: string;
     info?: Info;
     stats?: Stats;
-    spells?: Spell[];
-    passive?: Spell;
+    spells: Spell[];
+    passive: Spell;
 }
 
 export interface Info {
@@ -60,7 +60,7 @@ export interface Skin {
     image: string;
 }
 
-interface Spell {
+export interface Spell {
     id: string;
     name: string;
     label: string[];
