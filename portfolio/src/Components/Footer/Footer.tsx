@@ -10,7 +10,7 @@ export const Footer = ({ text, links }: Props) => {
     return (
         <footer className="footer">
             <p>{text}</p>
-            <div className="footer__links">
+            <div className="footerLinks">
                 {links.map((link) => (
                     <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a>
                 ))}

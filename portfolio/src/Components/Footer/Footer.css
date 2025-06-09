@@ -1,0 +1,17 @@
+:root {
+    --footer-bg-color: #282c34;
+    --footer-text-color: white;
+}
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 20px;
+}
