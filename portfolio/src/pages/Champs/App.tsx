@@ -1,9 +1,9 @@
-import { API_ROUTES } from './api';
-import { Card, ContainerCards} from './Components'
-import { useFetch } from './hooks'
-import { Data } from './interfaces';
+import { API_ROUTES } from '../../api';
+import { Card, ContainerCards} from '../../Components'
+import { useFetch } from '../../hooks'
+import { Data } from '../../interfaces';
 import './App.css';
-import VideoPreview from './Components/ObjectsExample/VideoPreview';
+import VideoPreview from '../../Components/ObjectsExample/VideoPreview';
 
 
 
@@ -13,7 +13,6 @@ function App() {
 
   return (
     <>    
-    <VideoPreview video={'https://www.youtube.com/watch?v=uLJx5_aw0x0'} />
       <h1>League of Legends Champions</h1>
       <ContainerCards>
         {data &&
