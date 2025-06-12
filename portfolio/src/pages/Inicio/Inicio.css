@@ -1,0 +1,104 @@
+#Inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+#Titulo h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Desc {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#Desc h4 {
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#Desc p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#Video {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#Champs {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+/* Estilos de galeria */
+#Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+/* Estilos de Links Oficiales */
+
+#LinksOficiales {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+#LinksOficiales a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+#LinksOficiales a:hover {
+    color: #0056b3;
+}
+
+#LinksOficiales #RedesSociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#LinksOficiales #RedesSocialesLinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+#LinksOficiales #RedesSocialesLinks a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #007bff;
+}
+
+#LinksOficiales #RedesSocialesLinks a:hover {
+    color: #0056b3;
+}

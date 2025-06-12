@@ -5,12 +5,12 @@ export const linksHeader = [
     url: '/Inicio',
     },  
     {
-    name: 'Proyectos',
-    url: '/Proyectos',
+    name: 'Campeones',
+    url: '/Champs',
     },
     {
-    name: 'Sobre Mí',
-    url: '/SobreMi',
+    name: 'Tienda',
+    url: '/Store',
     },
     {
     name: 'Contacto',

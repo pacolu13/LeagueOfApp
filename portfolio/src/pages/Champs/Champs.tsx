@@ -3,12 +3,8 @@ import { Card, ContainerCards} from '../../Components'
 import { useFetch } from '../../hooks'
 import { Data } from '../../interfaces';
 import './App.css';
-import VideoPreview from '../../Components/ObjectsExample/VideoPreview';
 
-
-
-
-function App() {
+export const Champs = () => {
   const { data, error, isLoading } = useFetch<Data>(API_ROUTES.champions);
 
   return (
@@ -17,12 +13,10 @@ function App() {
       <ContainerCards>
         {data &&
           Object.values(data.data).map((champ) => (
-            <Card Champ={champ} />
+            <Card Champ={champ} type='galery-card' showBtn ={true} />
           ))
         }
       </ContainerCards>
     </>
   );
 }
-
-export default App;

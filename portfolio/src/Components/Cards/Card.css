@@ -1,4 +1,5 @@
-.card {
+/* Tarjeta de galeria */
+.galery-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +10,77 @@
     min-width: 250px;
     min-height: 200px;
 }
+
+/* Tarjeta de inicio */
+
+.inicio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* ✨ Estilo base */
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 250px;
+  min-height: 200px;
+
+  /* 🌈 Degradado bonito */
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+
+  /* 💫 Inclinación sutil */
+  transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+  transition: all 0.4s ease;
+  
+  /* 🌟 Sombra para darle profundidad */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🐾 Al pasar el mouse */
+.inicio-card:hover {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+/* ✨ Efecto de brillo reluciente */
+.inicio-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* 🌟 Animación de brillo al hacer hover */
+.inicio-card:hover::before {
+  animation: shine 1.2s forwards;
+  opacity: 1;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+
 
 .link {
     border: 1px solid black;
