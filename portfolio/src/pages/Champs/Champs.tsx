@@ -13,7 +13,7 @@ export const Champs = () => {
       <ContainerCards>
         {data &&
           Object.values(data.data).map((champ) => (
-            <Card Champ={champ} type='galery-card' showBtn ={true} />
+            <Card Champ={champ} type='inicio-card' showBtn ={true} />
           ))
         }
       </ContainerCards>
