@@ -39,23 +39,3 @@
 }
 
 /* Estilos de Links Oficiales */
-.seccion p{
-    font-size: 1.2rem;
-    color: var(--text-color);
-    text-align: center;
-    margin: 10px 0;
-}
-
-.seccion a {
-    margin: 10px;
-    text-decoration: none;
-    padding: 8px 12px;
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-.seccion a:hover {
-    color: var(--secondary-color);
-}

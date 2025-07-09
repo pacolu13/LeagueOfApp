@@ -6,7 +6,6 @@ interface Props {
     links: link[];
 }
 
-
 export const Header = ({ title, links }: Props) => {
     return (
         <header className='header'>

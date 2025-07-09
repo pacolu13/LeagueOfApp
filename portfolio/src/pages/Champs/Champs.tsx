@@ -5,6 +5,7 @@ import { Data } from '../../interfaces';
 import './App.css';
 
 export const Champs = () => {
+  
   const { data, error, isLoading } = useFetch<Data>(API_ROUTES.champions);
 
   return (
