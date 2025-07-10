@@ -1,5 +1,4 @@
-export * from './Cards/Card'
-export * from './Cards/ImageCard'
+
 export * from './Button/Button'
 export * from './ContainerCards/ContainerCards'
 export * from './Header/Header'
@@ -9,3 +8,5 @@ export * from './Seccion/Seccion'
 export * from './VideoPreview/VideoPreview'
 export * from './SocialMedia/SocialMedia'
 export * from './Galeria/Galeria'
+export * from './Card/Card'
+export * from './Card/StatBar'
