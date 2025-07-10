@@ -1,5 +1,5 @@
 import { link } from "../../interfaces"
-
+import './SocialMedia.css'
 
 interface Props {
     linksSocial: link[]

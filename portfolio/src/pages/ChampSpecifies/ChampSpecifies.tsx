@@ -2,8 +2,7 @@ import { Link, useParams } from "react-router-dom"
 import { useFetch } from "../../hooks";
 import { API_ROUTES } from "../../api";
 import { Champion, DataChampion, Skin } from "../../interfaces";
-import { Galeria } from "../../Components/Galeria/Galeria";
-import { ChampionDetails } from "../../Components";
+import { Galeria, ChampionDetails } from "../../Components";
 import "./ChampSpecifies.css"
 
 

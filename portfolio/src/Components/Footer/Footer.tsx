@@ -1,4 +1,5 @@
 import { link } from '../../interfaces';
+import { SocialMedia } from '../SocialMedia/SocialMedia';
 import './Footer.css';
 
 interface Props {
@@ -10,11 +11,7 @@ export const Footer = ({ text, links }: Props) => {
     return (
         <footer className="footer">
             <p>{text}</p>
-            <div className="footerLinks">
-                {links.map((link) => (
-                    <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a>
-                ))}
-            </div>
+            <SocialMedia linksSocial={links} />
         </footer>
     );
 }

@@ -1,39 +1,35 @@
 
 export const linksHeader = [
-    { 
-    name: 'Inicio',
-    url: '/Inicio',
-    },  
     {
-    name: 'Campeones',
-    url: '/Champs',
+        name: 'Inicio',
+        url: '/Inicio',
     },
     {
-    name: 'Tienda',
-    url: '/Store',
+        name: 'Campeones',
+        url: '/Champs',
     },
     {
-    name: 'Contacto',
-    url: '/Contacto',
+        name: 'Tienda',
+        url: '/Store',
+    },
+    {
+        name: 'Contacto',
+        url: '/Contacto',
     }
 ];
 
 export const linksFooter = [
-    { 
-    name: 'GitHub',
-    url: '',
-    },  
     {
-    name: 'LinkedIn',
-    url: '',
+        name: 'GitHub',
+        url: '',
     },
     {
-    name: 'Portfolio',
-    url: '',
+        name: 'LinkedIn',
+        url: '',
     },
     {
-    name: 'Twitter',
-    url: '',
+        name: 'Portfolio',
+        url: '',
     }
 ];
 
@@ -63,3 +59,5 @@ export const linksSocial = [
         url: 'https://www.tiktok.com/@leagueoflegends',
     }
 ];
+
+export const mensajeFooter = "Este es un proyecto meramente ilustrativo y referencial de como usar League of Legends API y no tiene fines comerciales. No está afiliado a Riot Games ni a League of Legends de ninguna manera. Todos los derechos reservados por Riot Games.";

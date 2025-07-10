@@ -1,8 +1,9 @@
 import { useFetch } from "../../hooks"
 import { Champion, Data } from "../../interfaces"
-import { fondoChampions, fondoKDA, fondoStarW } from "../../assets"
+import { fondoStarW, LeagueLogo } from "../../assets"
 import { Button, Card, Seccion, SocialMedia, VideoPreview } from "../../Components/"
 import { linksSocial } from "../../../public/DatosPrueba/Links"
+
 import './Inicio.css'
 
 
@@ -15,13 +16,10 @@ export const Inicio = () => {
     const ChampEj2: Champion | undefined = data2 ? Object.values(data2.data)[0] : undefined;
     const ChampEj3: Champion | undefined = data3 ? Object.values(data3.data)[0] : undefined;
 
-
     return (
         <div id="Inicio">
-            <div id="Titulo">
-                <h1>League of Legends</h1>
-            </div>
-            <Seccion titulo="¡Bienvenid@ al mundo de League of Legends!" fondo={fondoKDA}>
+            <Seccion fondo={fondoStarW}>
+                <img src={LeagueLogo} />
                 <p>Explorá todo sobre tus campeones favoritos: sus habilidades, skins, historias y mucho más.
                     Sumergite en la Grieta del Invocador, conocé cada rol, estrategia y
                     misterio que hace de LoL un universo tan emocionante.</p>
@@ -30,29 +28,14 @@ export const Inicio = () => {
                 </div>
             </Seccion>
 
-            <Seccion fondo={fondoChampions}>
-                <Seccion titulo="Campeones">
-                    <div id="Galeria">
-                        {
-                            ChampEj1 && ChampEj2 && ChampEj3 ? (
-                                <>
-                                    <Card Champ={ChampEj1} type="inicio-card" showBtn={false} />
-                                    <Card Champ={ChampEj2} type="inicio-card" showBtn={false} />
-                                    <Card Champ={ChampEj3} type="inicio-card" showBtn={false} />
-                                </>
-                            ) : (
-                                <h3>Cargando campeones...</h3>
-                            )
-                        }
-                    </div>
-                </Seccion>
+            <Seccion >  
                 <p>Descubrí la lista completa de campeones, cada uno con habilidades únicas y roles específicos.</p>
                 <Button label="Ver Campeones" parentMethod={() => window.location.href = '/champs'} />
             </Seccion>
 
             <Seccion titulo="Pagina Oficial" fondo={fondoStarW}>
                 <p>Para más información, noticias y eventos, visitá la página oficial de League of Legends.</p>
-                <a href="https://www.leagueoflegends.com/es-es/" target="_blank" rel="noopener noreferrer">Juega AQUI</a>
+                <Button label="Visitar" parentMethod={() => window.open('https://www.leagueoflegends.com/es-es/', '_blank')} />
                 {/*Redes sociales oficiales*/}
                 <SocialMedia linksSocial={linksSocial} />
             </Seccion>

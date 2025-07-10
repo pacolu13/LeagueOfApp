@@ -2,11 +2,12 @@ import "./Seccion.css";
 
 interface Props {
     titulo?: string;
+    esEncabezado?: boolean;
     fondo?: string;
     children?: React.ReactNode;
 }
 
-export const Seccion = ({ titulo, fondo, children }: Props) => {
+export const Seccion = ({ titulo, fondo, children, esEncabezado }: Props) => {
     return (
         <div
             className="seccion"
@@ -17,7 +18,8 @@ export const Seccion = ({ titulo, fondo, children }: Props) => {
                 backgroundPosition: "center",
             }}
         >
-            <h2>{titulo}</h2>
+            {esEncabezado && <h1>{titulo}</h1>}
+            {!esEncabezado && <h2>{titulo}</h2>}
             {children}
         </div>
     );

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
 .seccion {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,27 @@
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
+}
+
+.seccion img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.seccion h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Chicle', cursive;
+    letter-spacing: 4px;
+    margin: 0;
+    padding: 20px;
+    color: var(--title-color);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+
 }
 
 .seccion p {

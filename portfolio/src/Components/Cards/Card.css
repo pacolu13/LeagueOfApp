@@ -18,34 +18,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   /* ✨ Estilo base */
-  border: 1px solid #000;
   border-radius: 10px;
   padding: 10px;
-  min-width: 250px;
-  min-height: 200px;
-
-  /* 🌈 Degradado bonito */
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-
-  /* 💫 Inclinación sutil */
-  transform: perspective(1000px) rotateX(2deg) rotateY(2deg);
+  min-width: 150px;
+  min-height: 150px;
+  background:  linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  transform: perspective(50px) rotateX(1deg) rotateY(1deg);
   transition: all 0.4s ease;
-
-  /* 🌟 Sombra para darle profundidad */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
 
-/* 🐾 Al pasar el mouse */
 .inicio-card:hover {
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(-10px);
-  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.1);
 }
 
-/* ✨ Efecto de brillo reluciente */
 .inicio-card::before {
   content: "";
   position: absolute;
@@ -63,10 +52,9 @@
   pointer-events: none;
 }
 
-/* 🌟 Animación de brillo al hacer hover */
 .inicio-card:hover::before {
   animation: shine 1.2s forwards;
-  opacity: 1;
+  opacity: 5;
 }
 
 @keyframes shine {
@@ -79,12 +67,3 @@
   }
 }
 
-
-
-.link {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-  text-decoration: none;
-  color: inherit;
-}

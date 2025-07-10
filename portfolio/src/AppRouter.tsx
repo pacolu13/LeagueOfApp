@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Header } from "./Components";
-import { linksHeader, linksFooter } from "../public/DatosPrueba/Links";
+import { linksHeader, linksFooter, mensajeFooter } from "../public/DatosPrueba/Links";
 import { Champs, Inicio, Tienda, ChampSpecifies } from "./pages/index";
 
 export const AppRouter = () => {
@@ -15,6 +15,6 @@ export const AppRouter = () => {
                 <Route path="/Champ/:champName" element={<ChampSpecifies />} />
             </Routes>
         </BrowserRouter>
-        <Footer text={"Footer"} links={linksFooter} />
+        <Footer text={mensajeFooter} links={linksFooter} />
     </>
 }

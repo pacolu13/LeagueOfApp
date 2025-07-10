@@ -1,9 +1,21 @@
 
 .footer {
     background-color: var(--footer-header-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: white;
     padding: 20px;
     text-align: center;
+
+}
+
+.footer p{
+    width: 50%;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: rgb(80, 79, 79);
+    font-weight: 400;
 }
 
 .footerLinks {
