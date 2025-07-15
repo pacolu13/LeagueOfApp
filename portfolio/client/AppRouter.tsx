@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer, Header } from "./Components";
-import { linksHeader, linksFooter, mensajeFooter } from "../public/DatosPrueba/Links";
+import { linksHeader, linksFooter, mensajeFooter } from "./public/DatosPrueba/Links";
 import { Champs, Inicio, Tienda, ChampSpecifies } from "./pages/index";
 
 export const AppRouter = () => {

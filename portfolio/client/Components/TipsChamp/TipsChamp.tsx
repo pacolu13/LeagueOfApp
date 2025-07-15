@@ -1,5 +1,5 @@
 import './TipsChamp.css';
-import icon from '../../../public/favicon/favicon-32x32.png';
+import icon from '../../assets/favicon/Simbolo.png';
 
 interface Props {
     tips: string[];

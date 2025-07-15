@@ -2,7 +2,7 @@ import { useFetch } from "../../hooks"
 import { Champion, Data } from "../../interfaces"
 import { fondoStarW, LeagueLogo } from "../../assets"
 import { Button, Card, Seccion, SocialMedia, VideoPreview } from "../../Components/"
-import { linksSocial } from "../../../public/DatosPrueba/Links"
+import { linksSocial } from "../../public/DatosPrueba/Links.ts"
 
 import './Inicio.css'
 
