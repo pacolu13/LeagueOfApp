@@ -1,5 +1,5 @@
 import './TipsChamp.css';
-import icon from '../../assets/favicon/Simbolo.png';
+
 
 interface Props {
     tips: string[];
@@ -17,7 +17,7 @@ export const TipsChamp = ({ tips, title }: Props) => {
             <ul>
                 {tips.map((tip, index) => (
                     <div className='tip-item'>
-                        <img src={icon} alt="icon" />
+                        <img src="../assets/favicon/Simbolo.png" alt="icon" />
                         <li key={index}>{tip}</li>
                     </div>
 
