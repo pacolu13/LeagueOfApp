@@ -80,35 +80,14 @@ Ejecutar en entorno de desarrollo:
 npm run dev
 ```
 
+```
 La aplicación se levanta por defecto en:
-
-```
 http://localhost:5173
-```
-
----
-
-## 🧩 Backend
-
-El backend se encuentra en un **repositorio independiente** y es el encargado de gestionar la comunicación con la API de League of Legends y la lógica de negocio.
-
-> Repositorio backend: *(pendiente de agregar)*
-
 ---
 
 ## 📌 Estado del Proyecto
 
 🚧 **En desarrollo**
-
----
-
-## 👤 Autor
-
-**Luca**
-Desarrollador Full Stack Junior
-
-* GitHub: *(opcional)*
-* LinkedIn: *(opcional)*
 
 ---
 
