@@ -80,7 +80,7 @@ Ejecutar en entorno de desarrollo:
 npm run dev
 ```
 
-```
+---
 La aplicación se levanta por defecto en:
 http://localhost:5173
 ---
@@ -90,11 +90,6 @@ http://localhost:5173
 🚧 **En desarrollo**
 
 ---
-
-## 📄 Licencia
-
-Proyecto de uso personal y demostrativo.
-Proyecto Personal
 
 El proyecto esta designado para perfeccionar las habilidades en desarrollo FrontEnd
 
